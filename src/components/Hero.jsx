@@ -27,7 +27,12 @@ export const Hero = () => {
           alt="bg-image"
         />
         <div className="w-[598px] h-[252px] px-10 py-10  bg-white rounded-xl absolute z-10 bottom-[13px] left-[11px]">
-          <TechnologyButton />
+          <TechnologyButton
+            text={"Technology"}
+            color={"indigo-500"}
+            textColor={"white"}
+            size={"sm"}
+          />
           <h1 className="font-semibold text-4xl mt-4">
             Grid system for better Design User Interface
           </h1>

@@ -1,4 +1,4 @@
-import { Hero } from "@/components/Hero";
+import { Footer } from "@/components/Footer";
 import "./globals.css";
 import { Header } from "@/components/Header";
 
@@ -10,11 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="w-307.5 flex flex-col mx-auto">
-        <Header />
-        <Hero />
-        {children}
-      </body>
+      <Header />
+      <body className="w-307.5 flex flex-col mx-auto">{children}</body>
+      <Footer />
     </html>
   );
 }
