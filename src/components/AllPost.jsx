@@ -3,7 +3,7 @@ import React from "react";
 import { Filter } from "./Filter";
 import { LoadMoreButton } from "./LoadMoreButton";
 
-export const AllPost = () => {
+export const AllPost = ({ post }) => {
   return (
     <div className="w-full mt-[100px]">
       <div className="flex flex-col gap-8">

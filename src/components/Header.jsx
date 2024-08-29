@@ -6,11 +6,11 @@ import { IoIosSearch } from "react-icons/io";
 export const Header = () => {
   const router = [
     { href: "/", title: "Home" },
-    { href: "/contact", title: "Contact" },
     {
       href: "/blog",
       title: "Blog",
     },
+    { href: "/contact", title: "Contact" },
   ];
   return (
     <div className="py-10 flex justify-center ">

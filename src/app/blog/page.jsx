@@ -1,7 +1,11 @@
 import React from "react";
 
 const Blog = () => {
-  return <div>Blog</div>;
+  async function page() {
+    const result = await fetch("https://dev.to/api/articles");
+    const obResult = await result.json();
+  }
+  return <div></div>;
 };
 
 export default Blog;
