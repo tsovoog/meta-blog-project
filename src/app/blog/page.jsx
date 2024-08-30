@@ -5,7 +5,9 @@ const Blog = () => {
     const result = await fetch("https://dev.to/api/articles");
     const obResult = await result.json();
   }
-  return <div></div>;
+  return <div>
+    
+  </div>;
 };
 
 export default Blog;

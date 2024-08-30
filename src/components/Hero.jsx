@@ -29,8 +29,8 @@ export const Hero = () => {
         <div className="w-[598px] h-[252px] px-10 py-10  bg-white rounded-xl absolute z-10 bottom-[13px] left-[11px]">
           <TechnologyButton
             text={"Technology"}
-            color={"indigo-500"}
-            textColor={"white"}
+            color={"bg-indigo-500"}
+            textColor={"text-white"}
             size={"sm"}
           />
           <h1 className="font-semibold text-4xl mt-4">

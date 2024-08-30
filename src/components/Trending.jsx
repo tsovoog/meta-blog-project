@@ -35,8 +35,8 @@ export const Trending = () => {
             <div className="absolute z-50 w-[240px] h-[120px] flex flex-col bottom-7 left-[29px] gap-4">
               <TechnologyButton
                 text={"Technology"}
-                color={"indigo-500"}
-                textColor={"white"}
+                color={"bg-indigo-500"}
+                textColor={"tetx-white"}
                 size={"xs"}
               />
               <p className="text-lg font-semibold text-white">{para}</p>
