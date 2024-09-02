@@ -30,7 +30,6 @@ export const AllPost = ({ post }) => {
                 published_at={published_at}
                 title={title}
                 tag={tag_list[0]}
-                userPro=""
               />
             );
           })}

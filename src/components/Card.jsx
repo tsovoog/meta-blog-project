@@ -1,14 +1,15 @@
 import React from "react";
 import { TechnologyButton } from "./TechnologyButton";
+import { UserPro } from "./UserPro";
 
-export const Card = ({ cover, tag, published_at, title, userPro = "" }) => {
+export const Card = ({ cover, tag, title, user, published_at }) => {
   const colors = ["indigo-50"];
   return (
-    <div className="w-[392px] h-[488px] p-4 rounded-xl border-[1px] border-[#E8E8EA]">
+    <div className="w-[392px] h-[488px] p-4 rounded-xl border-[1px] border-[#E8E8EA] ">
       <div className="w-full h-60 rounded-md ">
-        <img className="w-full h-60 rounded-md" src={cover} alt="" />
+        <img className="w-full h-60 rounded-md " src={cover} alt="" />
       </div>
-      <div className="w-full h-60 p-2 flex flex-col">
+      <div className="w-full h-60 p-2 flex flex-col mt-6">
         <div className="w-full">
           <TechnologyButton
             text={tag}
@@ -16,14 +17,11 @@ export const Card = ({ cover, tag, published_at, title, userPro = "" }) => {
             textColor={"text-indigo-500"}
             size={"sm"}
           />
-          <h1>{title}</h1>
+          <h1 className="font-semibold text-xl mt-4 mb-5">{title}</h1>
         </div>
-        <div>
-          <span className="none">
-            <img src={userPro} alt="" />
-            <p></p>
-          </span>
-          <span>{published_at}</span>
+        <div className="flex items-center gap-3">
+          {user && <UserPro user={user} />}
+          <span className="text-[#97989F]">{published_at.slice(0, 10)}</span>
         </div>
       </div>
     </div>
