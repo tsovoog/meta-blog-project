@@ -17,7 +17,9 @@ export const Card = ({ cover, tag, title, user, published_at }) => {
             textColor={"text-indigo-500"}
             size={"sm"}
           />
-          <h1 className="font-semibold text-xl mt-4 mb-5">{title}</h1>
+          <h1 className="font-semibold h-[60px] overflow-hidden text-xl mt-4 mb-5 ">
+            {title}
+          </h1>
         </div>
         <div className="flex items-center gap-3">
           {user && <UserPro user={user} />}

@@ -3,7 +3,7 @@ import React from "react";
 
 export const LoadMoreButton = ({ countHandler }) => {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center pt-5">
       <button
         onClick={countHandler}
         className="px-5 py-3 border-[1px] border-gray-500 rounded-xl text-gray-500 "
